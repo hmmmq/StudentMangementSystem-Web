@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.niit.mapper.LeaveMapper">
+  <resultMap id="BaseResultMap" type="com.niit.pojo.Leave">
+    <id column="leaveId" jdbcType="INTEGER" property="leaveid" />
+    <result column="stuId" jdbcType="INTEGER" property="stuid" />
+    <result column="leaveDate" jdbcType="DATE" property="leavedate" />
+    <result column="reason" jdbcType="VARCHAR" property="reason" />
+  </resultMap>
+<!--  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">-->
+<!--    delete from leave-->
+<!--    where leaveId = #{leaveid,jdbcType=INTEGER}-->
+<!--  </delete>-->
+  <insert id="addLeaveInfo" parameterType="com.niit.pojo.Leave">
+    insert into `leave`(stuId,leaveDate,reason) values(#{stuid,jdbcType=INTEGER},#{leavedate,jdbcType=DATE},#{reason,jdbcType=VARCHAR})
+  </insert>
+<!--  <update id="updateByPrimaryKey" parameterType="com.niit.pojo.Leave">-->
+<!--    update leave-->
+<!--    set stuId = #{stuid,jdbcType=INTEGER},-->
+<!--      leaveDate = #{leavedate,jdbcType=DATE},-->
+<!--      reason = #{reason,jdbcType=VARCHAR}-->
+<!--    where leaveId = #{leaveid,jdbcType=INTEGER}-->
+<!--  </update>-->
+  <select id="selectLeave" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+  select leaveId, stuId, leaveDate, reason from `leave` where stuId = #{stuId,jdbcType=INTEGER}
+</select>
+  <select id="selectAllLeave" resultMap="BaseResultMap">
+  select leaveId, stuId, leaveDate, reason
+  from `leave`
+</select>
+</mapper>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.niit.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.niit.pojo.User">
+    <id column="loginId" jdbcType="INTEGER" property="loginid" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+  </resultMap>
+
+  <select id="selectUser" parameterType="com.niit.pojo.User" resultMap="BaseResultMap">
+    select loginId, password
+    from user
+    where loginId = #{loginid,jdbcType=INTEGER} and password = #{password,jdbcType=VARCHAR}
+  </select>
+  
+  <update id="updateUser" parameterType="com.niit.pojo.User">
+  update user
+  set `password` = #{password,jdbcType=VARCHAR}
+  where loginId = #{loginid,jdbcType=INTEGER}
+</update>
+</mapper>

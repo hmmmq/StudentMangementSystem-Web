@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.niit.mapper.StudentMapper">
+  <resultMap id="BaseResultMap" type="com.niit.pojo.Student">
+    <id column="stuId" jdbcType="INTEGER" property="stuid" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="batch" jdbcType="CHAR" property="batch" />
+    <result column="age" jdbcType="CHAR" property="age" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="contactNumber" jdbcType="VARCHAR" property="contactnumber" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+  </resultMap>
+  <delete id="deleteStudent" parameterType="java.lang.Integer">
+    delete from student
+    where stuId = #{stuid,jdbcType=INTEGER}
+  </delete>
+
+  <update id="updateStudent" parameterType="com.niit.pojo.Student">
+    update student
+    set name = #{name,jdbcType=VARCHAR},
+      batch = #{batch,jdbcType=CHAR},
+      age = #{age,jdbcType=CHAR},
+      address = #{address,jdbcType=VARCHAR},
+      contactNumber = #{contactnumber,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR}
+    where stuId = #{stuid,jdbcType=INTEGER}
+  </update>
+  <select id="selectStudent" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select stuId, name, batch, age, address, contactNumber, email
+    from student
+    where stuId = #{stuid,jdbcType=INTEGER}
+  </select>
+
+  
+  <insert id="addStudent" parameterType="com.niit.pojo.Student">
+  insert into student(`name`,batch,age,address,contactNumber,email)values(#{name,jdbcType=VARCHAR},#{batch,jdbcType=CHAR},#{age,jdbcType=CHAR},#{address,jdbcType=VARCHAR},#{contactnumber,jdbcType=VARCHAR},#{email,jdbcType=VARCHAR})
+</insert>
+<select id="selectAllStudent" resultMap="BaseResultMap">
+  select stuId, name, batch, age, address, contactNumber, email
+  from student
+</select>
+  
+</mapper>

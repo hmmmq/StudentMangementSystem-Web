@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.niit.mapper.LeaveisagreedMapper">
+  <resultMap id="BaseResultMap" type="com.niit.pojo.Leaveisagreed">
+    <id column="leaveId" jdbcType="INTEGER" property="leaveid" />
+    <result column="isAgreed" jdbcType="INTEGER" property="isagreed" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from leaveisagreed
+    where leaveId = #{leaveid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.niit.pojo.Leaveisagreed">
+    insert into leaveisagreed (leaveId, isAgreed)
+    values (#{leaveid,jdbcType=INTEGER}, #{isagreed,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.niit.pojo.Leaveisagreed">
+    update leaveisagreed
+    set isAgreed = #{isagreed,jdbcType=INTEGER}
+    where leaveId = #{leaveid,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select leaveId, isAgreed
+    from leaveisagreed
+    where leaveId = #{leaveid,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select leaveId, isAgreed
+    from leaveisagreed
+  </select>
+</mapper>

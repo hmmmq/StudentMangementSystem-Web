@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.niit.mapper.AdminMapper">
+  <resultMap id="BaseResultMap" type="com.niit.pojo.Admin">
+    <id column="adminId" jdbcType="INTEGER" property="adminid" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+  </resultMap>
+
+  
+  <select id="selectAdmin" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+  select adminId,name
+  from admin
+  where adminId = #{adminid,jdbcType=INTEGER}
+</select>
+</mapper>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="776831bf-2d6c-414c-ad46-b54af1d7ab05" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$USER_HOME$/eclipse-workspace1/mavenlib" />
+        <option name="userSettingsFile" value="$USER_HOME$/eclipse-workspace1/apache-maven-3.6.3/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1mMmwpUVDLwshEdWHctPA8rVDHx" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.niit.service" />
+      <recent name="com.niit" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/niit/service/impl" />
+      <recent name="$PROJECT_DIR$/src/main/resources/com/niit/mapper" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/niit/pojo" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/niit/controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/css" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/img" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/niit/service/impl" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/error" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TestApplication">
+    <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.niit.Generator" />
+      <module name="foodie-homework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.niit.TestApplication" />
+      <module name="foodie-homework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.testcheckUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="foodie-homework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.niit" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.MyTest" />
+      <option name="METHOD_NAME" value="testcheckUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.testselectAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="foodie-homework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.niit" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.MyTest" />
+      <option name="METHOD_NAME" value="testselectAdmin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.testselectAllStudentLeave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="foodie-homework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.niit" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.MyTest" />
+      <option name="METHOD_NAME" value="testselectAllStudentLeave" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.TestApplication" />
+      <item itemvalue="Application.Generator" />
+      <item itemvalue="JUnit.MyTest.testselectAllStudentLeave" />
+      <item itemvalue="JUnit.MyTest.testselectAdmin" />
+      <item itemvalue="JUnit.MyTest.testcheckUser" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestApplication" />
+        <item itemvalue="Application.Generator" />
+        <item itemvalue="JUnit.MyTest.testcheckUser" />
+        <item itemvalue="JUnit.MyTest.testselectAdmin" />
+        <item itemvalue="JUnit.MyTest.testselectAllStudentLeave" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="776831bf-2d6c-414c-ad46-b54af1d7ab05" name="Default Changelist" comment="" />
+      <created>1609312077756</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609312077756</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
