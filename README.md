@@ -20,4 +20,4 @@
 
 # 3 System Architecture Design
 
-![img](file:////private/var/folders/hg/l9m94kl50p70tn4rgwk7z_4h0000gn/T/com.kingsoft.wpsoffice.mac/wps-hmqhmq/ksohtml/wpsfXLbQU.jpg) 
+![architect](./pic/architect.png)
